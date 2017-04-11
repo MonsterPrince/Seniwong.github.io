@@ -1,0 +1,29 @@
+body { 
+	background: #000033 url(magicWorld.jpg) top center;
+	background-size: 100%;
+	background-origin: content;
+    margin: 0 auto;
+    padding: 0;
+	border: 0;
+	color: #FFF; 
+	}
+
+header{ 
+	background: #000033;
+	background-size: 80%;
+	background-origin: content;
+    margin: 0 auto;
+    padding: 0;
+	border: 0;
+	color: #FFF; 
+	}
+
+footer { 
+	text-align: center;
+	background: #000033;
+	border-top: 10px solid #E8E8E4;
+	text-transform: uppercase; 
+    color: #333333;
+    height: 25px;
+    width: 100%;
+	}
