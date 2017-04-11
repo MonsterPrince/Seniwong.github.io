@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>LAB-03 | JavaScript</title>
+	<link rel="stylesheet" media="screen" href="StyleCSS.css">
+	<script type="text/javascript" src="JavaScript.js"></script>
+	<script type="text/javascript" src="CookieScript.js"></script>
+	<script src="/path/to/jquery.min.js"></script>
+	<script src="/path/to/moment.min.js"></script>
+	<script src="src/combodate.js"></script>
+
+</head>
+
+<body>
+<div class="page-wrapper">
+	<header>
+		<div id = "wraper">
+			<h1 id = "logo" class = "slide">
+				<a title ="LAB-03 | JavaScript"><img src ="webLogo.png"  alt ="LAB-03"></a>
+			</h1>
+		</div>
+	</header>
+<center>
+<h3>Tell me about yourself</h3>
+
+<form method="post" action="ASPForm.asp" onsubmit="return validateForm(this)" name= "myForm">
+  First name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="firstname" id="firstname" class="memorize"><br><br>
+  Last name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="lastname" id="lastname" class="memorize"><br><br>
+
+  ---------------------- Address ---------------------<br><br>
+  House number :&nbsp;&nbsp; <input type="text" name="housenumber" id="housenumber"><br><br>
+  Street :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="street"
+  id="street" class="memorize"><br><br>
+  City :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <input type="text" name="city" id="city" class="memorize"><br><br>
+  Province :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="province" id="province" class="memorize"><br><br>
+  Zipcode :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" name="zipcode" id="zipcode" class="memorize"><br><br>
+  -------------------------------------------------------<br><br>
+
+  Phone number :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  		<input type="text" name="phone0" id="phone0 style="WIDTH: 40px; TEXT-ALIGN: center" onKeyup="autoTab(this, 4, phone1)" maxlength=4 class="memorize"> - 
+		<input type="text" name="phone1" id="phone1 style="WIDTH: 35px; TEXT-ALIGN: center" onKeyup="autoTab(this, 3, phone2)" maxlength=3 class="memorize"> - 
+		<input type="text" name="phone2" id="phone2 style="WIDTH: 35px; TEXT-ALIGN: center"  maxlength=3 class="memorize"><br><br>
+
+  Cell phone number :  
+  		<input type="text" name="cphone0" id="cphone0 style="WIDTH: 45px; TEXT-ALIGN: center" onKeyup="autoTab(this, 5, cphone1)" maxlength=5 class="memorize"> - 
+		<input type="text" name="cphone1" id="cphone1 style="WIDTH: 35px; TEXT-ALIGN: center" onKeyup="autoTab(this, 3, cphone2)" maxlength=3 class="memorize"> - 
+		<input type="text" name="cphone2" id="cphone2 style="WIDTH: 40px; TEXT-ALIGN: center"  maxlength=4 class="memorize"><br><br>
+
+  Birthday :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="birthday" id="date" 
+  data-format="DD/MM/YYYY" data-template="DD MMM YYYY" name="date" value="13-02-2017" style="display: none;" class="memorize">
+  <span class="combodate">
+	  <select class="day " style="width: auto;">
+		  <option value=""></option><option value="1">01</option><option value="2">02</option><option value="3">03</option>
+		  <option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option>
+		  <option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option>
+		  <option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option>
+		  <option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option>
+		  <option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option>
+		  <option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option>
+		  <option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+  	  </select>&nbsp;&nbsp;
+	  	  <select class="month " style="width: auto;">
+	  	  <option value=""></option>
+	  	  <option value="0">01</option><option value="1">02</option><option value="2">03</option><option value="3">04</option>
+	  	  <option value="4">05</option><option value="5">06</option><option value="6">07</option><option value="7">08</option>
+	  	  <option value="8">09</option><option value="9">10</option><option value="10">11</option><option value="11">12</option>
+  	  </select>&nbsp;&nbsp;
+  	  <select class="year " style="width: auto;">
+  	  <option value=""></option>
+  	  <option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option>
+  	  <option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option>
+  	  <option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option>
+  	  <option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option>
+  	  <option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option>
+  	  <option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option>
+  	  <option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option>
+  	  <option value="1989">1989</option><option value="1988">1988</option><option value="1987">1987</option><option value="1986">1986</option>
+  	  <option value="1985">1985</option><option value="1984">1984</option><option value="1983">1983</option><option value="1982">1982</option>
+  	  <option value="1981">1981</option><option value="1980">1980</option><option value="1979">1979</option><option value="1978">1978</option>
+  	  <option value="1977">1977</option><option value="1976">1976</option><option value="1975">1975</option><option value="1974">1974</option>
+  	  <option value="1973">1973</option><option value="1972">1972</option><option value="1971">1971</option><option value="1970">1970</option>
+  	  </select>&nbsp;&nbsp;</span><br><br>
+  Citizenship number : 
+  		<input type="text" name="cznum1" id="cznum1" style="WIDTH: 15px; TEXT-ALIGN: center" onKeyup="autoTab(this, 1, cznum2)" maxlength=1 class="memorize"> - 
+		<input type="text" name="cznum2" id="cznum2"  style="WIDTH: 15px; TEXT-ALIGN: center" onKeyup="autoTab(this, 1, cznum3)" maxlength=1 class="memorize"> 
+
+		<input type="text" name="cznum3" id="cznum3" style="WIDTH: 15px; TEXT-ALIGN: center" onKeyup="autoTab(this, 1, cznum4)" maxlength=1 class="memorize"> 
+		<input type="text" name="cznum4" id="cznum4" style="WIDTH: 15px; TEXT-ALIGN: center" onKeyup="autoTab(this, 1, cznum5)" maxlength=1 class="memorize"> 
+
+		<input type="text" name="cznum5" id="cznum5" style="WIDTH: 15px; TEXT-ALIGN: center" onKeyup="autoTab(this, 1, cznum6)" maxlength=1 class="memorize"> - 
+		<input type="text" name="cznum6" id="cznum6" style="WIDTH: 15px; TEXT-ALIGN: center" onKeyup="autoTab(this, 1, cznum7)" maxlength=1 class="memorize">  
+
+		<input type="text" name="cznum7" id="cznum7" style="WIDTH: 15px; TEXT-ALIGN: center" onKeyup="autoTab(this, 1, cznum8)" maxlength=1 class="memorize">
+		<input type="text" name="cznum8" id="cznum8" style="WIDTH: 15px; TEXT-ALIGN: center" onKeyup="autoTab(this, 1, cznum9)" maxlength=1 class="memorize"> 
+
+		<input type="text" name="cznum9" id="cznum9" style="WIDTH: 15px; TEXT-ALIGN: center" onKeyup="autoTab(this, 1, cznum10)" maxlength=1 class="memorize"> 
+		<input type="text" name="cznum10" id="cznum10" style="WIDTH: 15px; TEXT-ALIGN: center" onKeyup="autoTab(this, 1, cznum11)" maxlength=1 class="memorize"> -
+
+		<input type="text" name="cznum11" id="cznum11" style="WIDTH: 15px; TEXT-ALIGN: center" onKeyup="autoTab(this, 1, cznum12)" maxlength=1 class="memorize"> 
+		<input type="text" name="cznum12" id="cznum12" style="WIDTH: 15px; TEXT-ALIGN: center" onKeyup="autoTab(this, 1, cznum13)" maxlength=1 class="memorize"> - 
+		<input type="text" name="cznum13" id="cznum13" style="WIDTH: 15px; TEXT-ALIGN: center"  maxlength=1><br><br>
+
+  Zodiac Sign :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  	<select name= "zodiacsign" id="myZodiacSign" class="memorize">
+  		<option value=""></option>
+  		<option value="ARIES">ARIES</option>
+  		<option value="TAURUS">TAURUS</option>
+  		<option value="GEMINI">GEMINI</option>
+  		<option value="CANCER">CANCER</option>
+  		<option value="LEO">LEO</option>
+  		<option value="VIRGO">VIRGO</option>
+  		<option value="LIBRA">LIBRA</option>
+  		<option value="SCORPIO">SCORPIO</option>
+  		<option value="SAGITTARIUS">SAGITTARIUS</option>
+  		<option value="CAPRICORN">CAPRICORN</option>
+  		<option value="AQUARIUS">AQUARIUS</option>
+  		<option value="PISCES">PISCES</option>
+	</select><br><br>
+  Zodiac Year :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  	<select name= "zodiacyear" id="myZodiacYear" class="memorize">
+  		<option value=""></option>
+  		<option value="RAT">RAT</option>
+  		<option value="COW">COW</option>
+  		<option value="TIGER">TIGER</option>
+  		<option value="RABBIT">RABBIT</option>
+  		<option value="GREAT SNAKE">GREAT SNAKE</option>
+  		<option value="SMALL SNAKE">SMALL SNAKE</option>
+  		<option value="HORSE">HORSE</option>
+  		<option value="GOAT">GOAT</option>
+  		<option value="MONKEY">MONKEY</option>
+  		<option value="ROOSTER">ROOSTER</option>
+  		<option value="DOG">DOG</option>
+  		<option value="PIG">PIG</option>
+	</select><br><br>
+  Birth Day of Week : 
+  	<select name= "birthweek" id="myBDofWeek" class="memorize">
+  		<option value=""></option>
+  		<option value="SUNDAY">SUNDAY</option>
+  		<option value="MONDAY">MONDAY</option>
+  		<option value="TUESDAY">TUESDAY</option>
+  		<option value="WEDNESDAY">WEDNESDAY</option>
+  		<option value="THURSDAY">THURSDAY</option>
+  		<option value="FRIDAY">FRIDAY</option>
+  		<option value="SATURDAY">SATURDAY</option>
+	</select><br><br>
+
+  <input type="button"  value="Save" id="btSave">&nbsp;
+  <input type="reset" value="Cancel" name="reset">&nbsp;
+  <input type="submit" value="Submit" name="submit">
+</form>
+</center>
+</div>
+</body>
+</html>
