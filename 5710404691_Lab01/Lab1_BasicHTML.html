@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>LAB-01 | Web Technology and Wep Services</title>
+	<style type = "text/css">
+		body{
+        margin: 0 auto;
+        padding: 0px;
+        background-color: #33b6a8;
+        font-size: 14px;
+        color: #000000;
+		}
+
+		header{
+			height:100px;
+			width:870px;
+			margin: 0 auto;
+			background-image: url("img/header.png");
+		}
+
+		#Infomation{
+			/*height:134px;*/
+			width:869px;
+			background-image: url("img/bodybg.png");
+		}
+
+		#wraper{
+			width:870px;
+			position:relative;
+			margin: 0 auto;
+		}
+
+		#footer{
+		position: relative;
+		width: 870px;
+		height: 219px;
+		margin: 0 auto;
+		overflow:hidden;
+		background-image: url("img/footerbg.png");
+		color: #000000;
+		}
+
+		br.clear
+		{
+			clear:both;
+			height:1%;
+			margin:0px;
+			padding:0px;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div id = "wraper">
+			<h1 id = "logo" class="clear">
+				<a title ="LAB-01 | Web Technology and Wep Services"></a>
+			</h1>
+			<br class="clear">
+		</div>
+	</header>
+
+	<div id = "wraper">
+		<div id ="Infomation">
+			<h1><b><font color = "000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;BASIC HTML</font></b></h1>
+			<center><img src="img/html5Logo.png"></center><br>
+			<h><left><font color = "000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;HTML หรือชื่อเต็มๆ ก็คือ Hypertext Markup Language เป็นภาษาประเภท Markup ที่ออกแบบมาเพื่อใช้ในการสร้างเว็บเพจ มีโครงสร้าง
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การเขียนโดยอาศัยตัวกำกับ (Tag) ควบคุมการแสดงผลข้อความ รูปภาพ เสียง อื่นๆ ที่สามารถเรียกดูผ่านทางเว็บเบราว์เซอร์ได้ แต่ละ Tag
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สามารถระบุหรือควบคุมการแสดงผลของเว็บให้เป็นไปตามที่ผู้ออกแบบเว็บไซต์กำหนดไว้ หรือจะให้เข้าใจง่ายๆ ก็คือ เว็บที่เราเข้าอยู่ในทุกๆ
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันนี้ ก็ล้วนถูกแสดงผลด้วยโค้ด HTML ทั้งนั้น<br><br>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;HTML พัฒนามาจากภาษา SGML และถูกพัฒนามาเรื่อยๆ ตั้งแต่เวอร์ชั่นแรก สู่เวอร์ชั่น HTML 2.0, HTML 3.2, HTML 4.1 และตัวล่าสุด
+			<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;คือ HTML 5 (ซึ่งอยู่ในระหว่างการพัฒนา) และยังมีการพัฒนารูปแบบของ HTML แบบใหม่ที่เรียกกันว่า XHTML ซึ่งมีความสามารถและ
+			<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;มาตรฐานที่รัดกุมกว่าอีกด้วย<br><br>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;HTML มีรูปแบบการทำงานง่ายๆ HTML จะอ่านจากซ้ายไปขวา จากบนลงล่าง เมื่อเราพิมพ์ข้อความตัวอักษรธรรมดาลงไปแล้วทำการ
+			<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;บันทึก พอเราเปิดไฟล์นั้นๆ มาดูผลลัพธ์ที่จะแสดงผลที่หน้าจอก็จะเป็นเหมือนตอนที่พิมพ์ข้อความตัวอักษรธรรมดาลงไป หากต้องการผลลัพธ์
+			<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ที่แตกต่างต้องใช้ Tag ในการควบคุมการแสดงผล<br><br><br>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ตัวอย่าง CODE ภาษา HTML</left><br><br><h>
+			<center><img src="img/exHtml.jpg"></center><br>
+
+			<h><left><font color = "000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จากภาพจะเห็นว่า… HTML มีรูปแบบการเขียนที่ชัดเจน จะประกอบด้วย Tag พื้นฐาน ในการเขียน Web<br><br><br>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ผลลัพธ์หน้าจอแสดงผล</left><br><br><h>
+
+			<center><img src="img/exHtml2.jpg"></center><br>
+
+			<h><left><font color = "0000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;ในการสร้าง Web Page ด้วยภาษา HTML นั้น สามารถใช้โปรแกรม Text Editor ต่างๆ เขียนได้ เช่น NotePad , Word Pad ฯลฯ หรือจะใช้
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;โปรแกรมประเภท WYSIWYG (What You See Is What You Get) ที่เป็นเครื่องมือช่วยสร้างเว็บเพจซึ่งอํานวยความสะดวกในการสร้างหน้า HTML
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เช่น Dream Weaver, Microsoft FrontPage ฯลฯ<br><br>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ส่วนในการเรียกใช้งานหรือทดสอบการทำงานของเอกสาร HTML ที่เราได้เขียนไว้นั้นจะใช้โปรแกรมเว็บเบราว์เซอร์ (web browser)
+			<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; เช่น Internet Explorer (IE), Google Chrome, Mozilla Firefox, Safari และอื่นๆ เป็นต้น เป็นเครื่องมือแสดงผลไฟล์ HTML ของเราออกมาเป็น
+			<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ตัวอักษร ภาพและเสียง</left><br><br><h>
+
+
+			<h><right><font color = "FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ที่มา : http://www.fusionidea.biz/html-คืออะไร/#prettyPhoto</right><br><br><h>
+		</div>
+	</div>
+	<footer id = "footer">
+		<div id = "wraper">
+			<br class="clear">
+		</div>
+	</footer>
+</body>
+</html>

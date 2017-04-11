@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" media="screen" href="Lab04-ResultStyleSheet.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+	var a = 20;
+	function submitFunction() {
+		if (a==10){
+			$("#Body").css('background-image', 'url(img/SunsetForestDeer.jpg)');
+		} else if (a==15){
+			$("#Body").css('background-image', 'url(img/Thailand.png)');
+		} else if (a==20){
+			$("#Body").css('background-image', 'url(img/TrainToMountain.png)');
+		}
+  }
+</script>
+<title>Provinces of Thailand</title>
+</head>
+<body id="Body">
+<input class="button" type="button" name="OK" id="OK" value="OK" onclick="submitFunction()">
+<h>Hellooooooo</h>
+</body>
+</html>
